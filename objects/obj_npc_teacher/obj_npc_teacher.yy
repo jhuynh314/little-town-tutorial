@@ -4,7 +4,9 @@
   "eventList":[],
   "managed":true,
   "name":"obj_npc_teacher",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"propertyId":{"name":"myText","path":"objects/obj_par_npc/obj_par_npc.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Hello there, what should we learn in class today?\"",},
+  ],
   "parent":{
     "name":"NPCs",
     "path":"folders/Objects/NPCs.yy",

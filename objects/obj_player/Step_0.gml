@@ -1,7 +1,14 @@
-moveRight = keyboard_check(vk_right);
-moveLeft = keyboard_check(vk_left);
-moveUp = keyboard_check(vk_up);
-moveDown = keyboard_check(vk_down);
+if (global.playerControl == true) {
+    moveRight = keyboard_check(vk_right);
+    moveLeft = keyboard_check(vk_left);
+    moveUp = keyboard_check(vk_up);
+    moveDown = keyboard_check(vk_down);
+} else {
+    moveRight = 0;
+    moveLeft = 0;
+    moveUp = 0;
+    moveDown = 0;
+}
 
 
 // Calculate Movement
@@ -50,16 +57,28 @@ if (vx != 0 || vy != 0){
 
 // Check for collisions with NPCs
 nearbyNPC = collision_rectangle(x-lookRange, y-lookRange,x+lookRange, y+lookRange, obj_par_npc,false,true);
-if(nearbyNPC && !hasGreeted){
+if(nearbyNPC){
     // Play greeting sound
-    hasGreeted = true;
-    audio_play_sound(snd_greeting01,1,0);
+    if (!hasGreeted){
+        if !(audio_is_playing(snd_greeting01)) {
+            hasGreeted = true;
+            audio_play_sound(snd_greeting01,1,0);
+        }
+    }
+    
+    // Pop up prompt
+    if(npcPrompt == noone || npcPrompt == undefined){
+        npcPrompt = scr_showPrompt(nearbyNPC, nearbyNPC.x, nearbyNPC.y-450);
+    }
 }
 if(!nearbyNPC){
     // reset greeting
     if(hasGreeted){
         hasGreeted = false;
     }
+    
+    // get rid of prompt
+    scr_dismissPrompt(npcPrompt, 0);
 }
 
 // Depth sorting
