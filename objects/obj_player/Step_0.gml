@@ -20,8 +20,12 @@ if (vx == 0 && vy == 0) {
 
 // If moving
 if (vx != 0 || vy != 0){
-    x += vx;
-    y += vy;
+    if (!collision_point(x+vx, y, obj_parent_environment, true, true)){
+        x += vx;
+    }
+    if (!collision_point(x, y+vy, obj_parent_environment, true, true)){
+        y += vy;   
+    }
     
     // change walking sprites
     if(vx > 0 ){
@@ -39,6 +43,22 @@ if (vx != 0 || vy != 0){
     if(vy < 0 ){
         sprite_index = spr_player_walk_up;
         dir = 1;
+    }
+    // Move audio listener with me
+    audio_listener_set_position(0,x,y,0);
+}
+
+// Check for collisions with NPCs
+nearbyNPC = collision_rectangle(x-lookRange, y-lookRange,x+lookRange, y+lookRange, obj_par_npc,false,true);
+if(nearbyNPC && !hasGreeted){
+    // Play greeting sound
+    hasGreeted = true;
+    audio_play_sound(snd_greeting01,1,0);
+}
+if(!nearbyNPC){
+    // reset greeting
+    if(hasGreeted){
+        hasGreeted = false;
     }
 }
 

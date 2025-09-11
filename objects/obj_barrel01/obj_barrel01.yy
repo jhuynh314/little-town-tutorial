@@ -6,8 +6,8 @@
   "name":"obj_barrel01",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Backgrounds",
+    "path":"folders/Objects/Backgrounds.yy",
   },
   "parentObjectId":{
     "name":"obj_parent_environment",

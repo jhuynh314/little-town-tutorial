@@ -14,6 +14,8 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"ef7c1c6d-7cd6-4f05-a6e6-537a3739ea9d","name":"ef7c1c6d-7cd6-4f05-a6e6-537a3739ea9d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"cc2b8fd6-590c-4dba-8322-ed8c86aeb39d","name":"cc2b8fd6-590c-4dba-8322-ed8c86aeb39d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"26ce0ed9-e227-4dab-9927-57f4758e11d2","name":"26ce0ed9-e227-4dab-9927-57f4758e11d2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"873936ee-e462-4b41-8d53-9993a968aa47","name":"873936ee-e462-4b41-8d53-9993a968aa47","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -24,7 +26,7 @@
   ],
   "name":"spr_teacher_idle_down",
   "nineSlice":null,
-  "origin":0,
+  "origin":9,
   "parent":{
     "name":"NPC",
     "path":"folders/Sprites/Characters and Items/NPC.yy",
@@ -50,7 +52,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":2.0,
+    "length":5.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -60,7 +62,7 @@
     },
     "name":"spr_teacher_idle_down",
     "playback":1,
-    "playbackSpeed":30.0,
+    "playbackSpeed":2.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -77,12 +79,18 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cc2b8fd6-590c-4dba-8322-ed8c86aeb39d","path":"sprites/spr_teacher_idle_down/spr_teacher_idle_down.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"1258b85f-36f5-4bab-b218-ba27683bea98","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"26ce0ed9-e227-4dab-9927-57f4758e11d2","path":"sprites/spr_teacher_idle_down/spr_teacher_idle_down.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"747f1fa6-fa52-427c-9761-29735b4363ef","IsCreationKey":false,"Key":2.0,"Length":2.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"873936ee-e462-4b41-8d53-9993a968aa47","path":"sprites/spr_teacher_idle_down/spr_teacher_idle_down.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a41fc932-98a5-4911-9443-8d1a1d44f5aa","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
-    "yorigin":0,
+    "xorigin":127,
+    "yorigin":441,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

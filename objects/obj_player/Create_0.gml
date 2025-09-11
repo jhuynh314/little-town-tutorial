@@ -6,3 +6,9 @@ moveRight = 0;
 moveLeft = 0;
 moveUp = 0;
 moveDown = 0;
+nearbyNPC = noone;
+lookRange = 200;
+hasGreeted = false;
+
+audio_listener_set_position(0,x,y,0);
+audio_listener_set_orientation(0,0,1,0,0,0,1);
