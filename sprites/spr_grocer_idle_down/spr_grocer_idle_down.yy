@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"NPC",
-    "path":"folders/Sprites/Characters and Items/NPC.yy",
+    "name":"Grocer",
+    "path":"folders/Sprites/Characters and Items/NPC/Grocer.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
