@@ -1,4 +1,6 @@
 global.playerControl = true;
+global.gameOver = false;
+global.gameStart = false;
 
 
 // Player States
@@ -31,3 +33,9 @@ enum seqState {
 sequenceState = seqState.notPlaying;
 curSeqLayer = noone;
 curSeq = noone;
+
+// NPC States
+enum npcState {
+    normal,
+    done,
+}

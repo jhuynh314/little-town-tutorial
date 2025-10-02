@@ -13,5 +13,8 @@ switch (event_data[? "message"]) {
 		// set our state
 		sequenceState = seqState.finished;
 		show_debug_message("obj_control has heard that Sequence "+string(curSeq)+" has ended")
+        audio_sound_gain(snd_townAmbience,0.2,1000);
+        audio_sound_gain(snd_townBGM,0.8,1000);
+            audio_sound_gain(snd_fountain,1,1000);
 		}; break;
 	}

@@ -38,7 +38,7 @@
   "name":"seq_baker_happy",
   "parent":{
     "name":"Sequences",
-    "path":"folders/Sprites/Sequences.yy",
+    "path":"folders/Sequences.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,
